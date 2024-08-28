@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <title>Birthday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="slider()">
+    <div class="banner">
+        <div class="slider">
+            <img src="photo/5.jpg" id="slideImg">
+
+        </div>
+        <div class="overlay">
+            <div class="content">
+                <h1>Happy Birthday Aravindeeee</h1>
+                <div onclick="play()">
+                    <button type="button">Play</button>
+                </div>
+                <audio id="song">
+                    <source src="Photograph.mp3" type="audio/mpeg">
+
+                </audio>
+
+            </div>
+            <div class="wishes">
+                <h4>I wish you all the happiness to come your way ahead. I am happy to have shared some best loving
+                    moments with you.
+                    I hope you find all the courage to fight for the best you deserve and i wish it finds your way.
+
+
+                </h4>
+                <h3>May God bless you</h3>
+                <h3>Once again Happy Birthday.</h3>
+
+            </div>
+        </div>
+
+    </div>
+    <script>
+        let song = document.getElementById("song");
+        var slideImg = document.getElementById("slideImg");
+        var images = new Array(
+            "photo/5.jpg",
+            "photo/8.jpg",
+            "photo/10.jpg",
+            "photo/9.jpg",
+            "photo/1.jpg",
+            "photo/11.jpg",
+            "photo/4.jpg",
+            "photo/7.jpg",
+            "photo/14.jpg",
+            "photo/15.jpg",
+            "photo/19.jpg",
+            "photo/18.jpg",
+            "photo/17.jpg",
+            "photo/22.jpg",
+            "photo/21.jpg",
+            "photo/23.jpg",
+            "photo/20.jpg",
+            "photo/13.jpg",
+            "photo/2.jpg"
+        );
+        var len = images.length;
+        var i = 0;
+        function slider() {
+            if (i > len - 1) {
+                i = 0;
+            }
+            slideImg.src = images[i];
+            i++;
+            setTimeout('slider()', 3000);
+        }
+        function play() {
+            song.play();
+        }
+    </script>
+</body>
+<style>
+    img {
+        width: 80%;
+
+    }
+
+    @media all and (max-width: 480px) {
+        img {
+            width: 100%;
+        }
+    }
+</style>
+
+</html>
