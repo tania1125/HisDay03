@@ -7,13 +7,14 @@
 
 <body onload="slider()">
     <div class="banner">
-        <div class="slider">
+        <div class="slider1">
             <img src="photo/5.jpg" id="slideImg">
 
         </div>
         <div class="overlay">
             <div class="content">
-                <h1>Happy Birthday Aravindeeee</h1>
+                <h2>Your special
+                    Day</h2>
                 <div onclick="play()">
                     <button type="button">Play</button>
                 </div>
@@ -23,43 +24,93 @@
                 </audio>
 
             </div>
-            <div class="wishes">
-                <h4>I wish you all the happiness to come your way ahead. I am happy to have shared some best loving
-                    moments with you.
-                    I hope you find all the courage to fight for the best you deserve and i wish it finds your way.
 
-
-                </h4>
-                <h3>May God bless you</h3>
-                <h3>Once again Happy Birthday.</h3>
-
-            </div>
         </div>
 
     </div>
+    <section>
+        <section class="parallax-1">
+            <div class="parallax-inner">
+                <h1>Happy</h1>
+            </div>
+        </section>
+        <section class="parallax-2">
+            <div class="parallax-inner">
+                <h1>Birthday</h1>
+            </div>
+        </section>
+        <section class="parallax-3">
+            <div class="parallax-inner">
+                <h1>Aravindeeee</h1>
+            </div>
+        </section>
+
+    </section>
+
+    <div class="container">
+
+        <span class="slider" id="slider1"></span>
+        <span class="slider" id="slider2"></span>
+        <span class="slider" id="slider3"></span>
+        <span class="slider" id="slider4"></span>
+        <span class="slider" id="slider5"></span>
+        <span class="slider" id="slider6"></span>
+        <span class="slider" id="slider7"></span>
+
+        <div class="imgContainer">
+
+            <div class="slide_div" id="slide_1">
+                <img src="./photo/15.jpg" alt="" class="img" id="img1">
+                <a href="#slider1" class="button" id="button1"></a>
+            </div>
+            <div class="slide_div" id="slide_2">
+                <img src="./photo/9.jpg" alt="" class="img" id="img2">
+                <a href="#slider2" class="button" id="button2"></a>
+            </div>
+            <div class="slide_div" id="slide_3">
+                <img src="./photo/21.jpg" alt="" class="img" id="img3">
+                <a href="#slider3" class="button" id="button3"></a>
+            </div>
+            <div class="slide_div" id="slide_4">
+                <img src="./photo/11.jpg" alt="" class="img" id="img4">
+                <a href="#slider4" class="button" id="button4"></a>
+            </div>
+            <div class="slide_div" id="slide_5">
+                <img src="./photo/7.jpg" alt="" class="img" id="img5">
+                <a href="#slider5" class="button" id="button5"></a>
+            </div>
+            <div class="slide_div" id="slide_6">
+                <img src="./photo/19.jpg" alt="" class="img" id="img6">
+                <a href="#slider6" class="button" id="button6"></a>
+            </div>
+            <div class="slide_div" id="slide_7">
+                <img src="./photo/2.jpg" alt="" class="img" id="img7">
+                <a href="#slider7" class="button" id="button7"></a>
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+    <div class="wishes">
+        <p> On this day i wish you all the happiness and joy to come your way . May God bless you .
+            Hope you are doing good.
+            Once again Happy Birthday
+        </p>
+
+    </div>
+
     <script>
         let song = document.getElementById("song");
         var slideImg = document.getElementById("slideImg");
         var images = new Array(
             "photo/5.jpg",
-            "photo/8.jpg",
-            "photo/10.jpg",
-            "photo/9.jpg",
-            "photo/1.jpg",
-            "photo/11.jpg",
-            "photo/4.jpg",
-            "photo/7.jpg",
-            "photo/14.jpg",
-            "photo/15.jpg",
-            "photo/19.jpg",
-            "photo/18.jpg",
-            "photo/17.jpg",
             "photo/22.jpg",
-            "photo/21.jpg",
-            "photo/23.jpg",
-            "photo/20.jpg",
-            "photo/13.jpg",
-            "photo/2.jpg"
+            "photo/18.jpg"
+
         );
         var len = images.length;
         var i = 0;

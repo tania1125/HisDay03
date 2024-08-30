@@ -1,17 +1,21 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+
+
 }
 
 .banner {
     width: 100%;
     height: 100vh;
     position: relative;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
-.slider {
+.slider1 {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -46,7 +50,7 @@
 .overlay {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
     position: absolute;
     top: 0;
 }
@@ -76,8 +80,235 @@ button:hover {
 }
 
 .wishes {
-    width: 70%;
-    margin: 250px auto 0;
+    background: linear-gradient(45deg, rgb(6, 11, 97), rgb(37, 103, 180), rgb(145, 126, 226));
+    width: 100%;
+
     text-align: center;
     color: antiquewhite;
+
+}
+
+.parallax-1 {
+    background: url('photo/8.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax-2 {
+    background: url('photo/8.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax-3 {
+    background: url('photo/8.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax-4 {
+    background: url('photo/8.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 120px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.parallax-inner {
+    padding: 10% 0;
+}
+
+h1 {
+    font-family: Cookie;
+    font-size: 100px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+}
+
+h2 {
+    font-family: Cookie;
+    font-size: 40px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 15.4px;
+}
+
+p {
+    font-family: Cookie;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+blockquote {
+    font-family: Cookie;
+    font-size: 21px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+pre {
+    font-family: Cookie;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 18.5714px;
+}
+
+.container {
+    background: linear-gradient(45deg, rgb(6, 11, 97), rgb(37, 103, 180), rgb(145, 126, 226));
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imgContainer {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.slide_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+}
+
+img {
+    position: relative;
+    height: 370px;
+    width: 240px;
+    filter: saturate(10%);
+    transition: 0.7s;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.button {
+    position: absolute;
+    width: 155px;
+    height: 370px;
+    transition: 0.7s;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#slider1:target~.imgContainer #img1,
+#slider1:target~.imgContainer #button1 {
+    width: 300px;
+    height: 500px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider2:target~.imgContainer #img2,
+#slider2:target~.imgContainer #button2 {
+    width: 300px;
+    height: 500px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider3:target~.imgContainer #img3,
+#slider3:target~.imgContainer #button3 {
+    width: 300px;
+    height: 500px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider4:target~.imgContainer #img4,
+#slider4:target~.imgContainer #button4 {
+    width: 300px;
+    height: 500px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider5:target~.imgContainer #img5,
+#slider5:target~.imgContainer #button5 {
+    width: 300px;
+    height: 500px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider6:target~.imgContainer #img6,
+#slider6:target~.imgContainer #button6 {
+    width: 300px;
+    height: 500px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider7:target~.imgContainer #img7,
+#slider7:target~.imgContainer #button7 {
+    width: 300px;
+    height: 500px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+
+#slider1:target~.imgContainer {
+    left: 60%;
+}
+
+#slider2:target~.imgContainer {
+    left: 40%;
+}
+
+#slider3:target~.imgContainer {
+    left: 20%;
+}
+
+#slider4:target~.imgContainer {
+    left: 0%;
+}
+
+#slider5:target~.imgContainer {
+    left: -20%;
+}
+
+#slider6:target~.imgContainer {
+    left: -40%;
+}
+
+#slider7:target~.imgContainer {
+    left: -30%;
+}
+
+
+
+.img {
+    height: 370px;
 }
